@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      if (image.src.endsWith("images\\tonuge off.jpg")) {
+        image.src = "images\\tonuge on.jpg";
+        image.alt = "Image 2";
+      } else {
+        image.src = "images\\tonuge off.jpg";
+        image.alt = "Image 1";
+      }
+    }
+    </script>
+</head>
+<body>
+  <header>
+    <h1>Product Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+  <main>
+    <section class="gallery">
+      <div class="product">
+        <style>
+          .image {
+            width: 300px;
+            height: 200px;
+          }
+        </style>
+        
+        <img src="images\\3 wheel car.JPG" class="image" alt="Image description">
+        
+        <h3>3 wheel car</h3>
+        <p>A small car that can be used as a toy or a model.</p>
+        <span class="price">$4.99</span>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    
+<p></p>
+
+
+
+
+
+
+      <div class="product">
+
+
+
+
+
+
+       
+        <style>
+          .image {
+            width: 300px;
+            height: 200px;
+          }
+        </style>
+        
+        <img id="myImage"  src="images\\tonuge off.jpg" class="image" alt="Image description">
+        
+        <button onclick="changeImage()">Switch Image</button>
+        <h3>Articulated Chameleon with switchable mouth and tounge.</h3>
+        <p>Description of Product 2.</p>
+        <span class="price">$29.99</span>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Description of Product 3.</p>
+        <span class="price">$24.99</span>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your 3D Printing Business. All rights reserved.</p>
+  </footer>
+</body>
+</html>
